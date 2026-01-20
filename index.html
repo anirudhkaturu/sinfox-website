@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sinfox Group</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial}
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#0f1221,#14163a);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.container{text-align:center}
+h1{font-size:54px;margin-bottom:10px}
+p{color:#cfd3ff;margin-bottom:60px}
+
+.cards{
+  display:flex;
+  gap:50px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.card{
+  width:340px;
+  padding:50px 40px;
+  border-radius:28px;
+  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.1);
+  text-decoration:none;
+  color:#fff;
+  transition:.4s;
+}
+.card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 30px 60px rgba(127,90,240,.45);
+}
+.card h2{font-size:32px;margin-bottom:10px}
+.card span{color:#7f5af0}
+.card p{color:#cfd3ff;margin-bottom:25px}
+.btn{
+  display:inline-block;
+  padding:12px 32px;
+  background:#7f5af0;
+  border-radius:40px;
+  font-weight:600;
+}
+@media(max-width:900px){
+  h1{font-size:40px}
+  .card{width:100%}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Sinfox Group</h1>
+  <p>Select a division to continue</p>
+
+  <div class="cards">
+    <a href="solution/index.html" class="card">
+      <h2>Sinfox <span>Solution</span></h2>
+      <p>Digital marketing, branding & web solutions</p>
+      <div class="btn">Enter</div>
+    </a>
+
+    <a href="media/index.html" class="card">
+      <h2>Sinfox <span>Media</span></h2>
+      <p>Photography, videography & creative studio</p>
+      <div class="btn">Enter</div>
+    </a>
+
+    <a href="academics/index.html" class="card">
+      <h2>Sinfox <span>Academics</span></h2>
+      <p>Education made simple, engaging & inspiring</p>
+      <div class="btn">Enter</div>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
